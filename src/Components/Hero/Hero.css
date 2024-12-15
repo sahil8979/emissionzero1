@@ -112,7 +112,7 @@
     bottom: 15%;
     width: 180px;
     height: 260px;
-    background-image: linear-gradient(to top, rgba(2,44,34,1) 15%, rgba(2,44,34,0.3) 100%), url("src/assets/bottomright.png");
+    background-image: linear-gradient(to top, rgba(2,44,34,1) 15%, rgba(2,44,34,0.3) 100%), url("public/assets/bottomright.png");
     background-size: cover;
     background-position: center;
     border-radius: 16px;
@@ -124,7 +124,7 @@
     bottom: 15%;
     width: 280px;
     height: 180px;
-    background-image: linear-gradient(to top, rgba(2,44,34,1) 20%, rgba(2,44,34,0.3) 100%), url("src/assets/bottomleft.png");
+    background-image: linear-gradient(to top, rgba(2,44,34,1) 20%, rgba(2,44,34,0.3) 100%), url("public/assets/bottomleft.png");
     background-size: cover;
     background-position: center;
     border-radius: 16px;
