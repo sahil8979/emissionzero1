@@ -1,4 +1,5 @@
 /* General Hero Section */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 .hero {
     display: flex;
     flex-direction: column;
@@ -112,7 +113,7 @@
     bottom: 15%;
     width: 180px;
     height: 260px;
-    background-image: linear-gradient(to top, rgba(2,44,34,1) 15%, rgba(2,44,34,0.3) 100%), url("public/assets/bottomright.png");
+    background-image: linear-gradient(to top, rgba(2,44,34,1) 15%, rgba(2,44,34,0.3) 100%), url("../../../public//assets/bottomright.png");
     background-size: cover;
     background-position: center;
     border-radius: 16px;
@@ -124,7 +125,7 @@
     bottom: 15%;
     width: 280px;
     height: 180px;
-    background-image: linear-gradient(to top, rgba(2,44,34,1) 20%, rgba(2,44,34,0.3) 100%), url("public/assets/bottomleft.png");
+    background-image: linear-gradient(to top, rgba(2,44,34,1) 20%, rgba(2,44,34,0.3) 100%), url("../../../public/assets/bottomleft.png");
     background-size: cover;
     background-position: center;
     border-radius: 16px;
@@ -236,7 +237,7 @@
         
     }
     .hero-content{
-        margin-top: 40%;
+        margin-top: 42%;
     }
 
     .hero-title {
@@ -263,14 +264,14 @@
         width: 120px;
         height: 180px;
         right: 4%;
-        bottom: 10%;
+        bottom: 20%;
     }
 
     .leftbottom-image {
         width: 150px;
         height: 120px;
         left: 4%;
-        bottom: 10%;
+        bottom: 20%;
     }
     .hero-button{
         padding: 10px 16px;

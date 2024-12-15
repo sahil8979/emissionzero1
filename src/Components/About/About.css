@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  font-family: "Figtree", sans-serif;
+}
+
+.about-us-container {
+  background-color: #fff;
+  padding: 3rem 2rem;
+  color: #1D1F1E;
+  line-height: 1.6;
+  margin-top: 2%;
+}
+
+/* About Us Text Section */
+.about-text-container {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center; /* Align items vertically */
+  gap: 30%; /* Space between title and description */
+  margin-right: 5%;
+}
+
+.about-title {
+  font-size: 2rem;
+  line-height: 1;
+  margin-left: 5%;
+  white-space: nowrap; /* Prevent wrapping of the title */
+  margin-bottom: 5%;
+}
+
+.about-title h2 {
+  font-weight: 400;
+}
+
+.about-description {
+  font-size: 1rem;
+  color: #1D1F1E;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  flex: 1; /* Adjust size to fit remaining space */
+}
+
+.read-more-button {
+  background-color: #BEF264;
+  color: #1D1F1E;
+  font-size: 1rem;
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.read-more-button:hover {
+  background-color: #5ba83f;
+}
+
+/* Image Grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.grid-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.grid-image:hover {
+  transform: scale(1.05);
+}
+
+/* Stats Section */
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.stat {
+  margin: 1rem 0;
+}
+
+.stat h3 {
+  font-size: 1.8rem;
+  color: #1D1F1E;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.stat p {
+  font-size: 0.9rem;
+  color: #646A69;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Make sure the title and description are displayed side by side on medium-sized screens */
+  .about-text-container {
+    flex-direction: row; /* Arrange title and description in a row */
+    justify-content: space-between; /* Space out title and description */
+    gap: 1rem; /* Add space between the title and description */
+  }
+
+  .about-title {
+    font-size: 1.8rem; /* Slightly smaller font size */
+    margin-left: 0; /* Remove extra left margin */
+  }
+
+  .about-description {
+    font-size: 0.95rem; /* Adjust font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+  }
+
+  /* Adjust layout for small screens */
+  .about-text-container {
+    flex-direction: column; /* Make title and description side by side */
+    justify-content: space-between; /* Space out the title and description */
+    gap: 1rem; /* Add space between title and description */
+  }
+
+  .stats-container {
+    flex-direction: column;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+}
