@@ -119,17 +119,7 @@
     border-radius: 16px;
 }
 
-.leftbottom-image {
-    position: absolute;
-    left: 10%;
-    bottom: 15%;
-    width: 280px;
-    height: 180px;
-    background-image: linear-gradient(to top, rgba(2,44,34,1) 20%, rgba(2,44,34,0.3) 100%), url("../../../public/assets/bottomleft.png");
-    background-size: cover;
-    background-position: center;
-    border-radius: 16px;
-}
+
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
