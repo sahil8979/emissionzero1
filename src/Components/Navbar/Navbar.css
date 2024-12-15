@@ -1,0 +1,132 @@
+/* General Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #022C22;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #FFFF;
+  font-family: "Figtree", sans-serif;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  transition: all 0.3s;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #68c167;
+}
+
+.contact-button {
+  color: #FFFF;
+  border: 2px solid #FFFF;
+  width: 125px;
+  height: 45px;
+  background-color: #022C22;
+  border-radius: 200px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #4a9e4e;
+}
+
+/* Toggle Button Styles */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s;
+}
+
+.navbar-toggle.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.navbar-toggle.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggle.open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+      flex-wrap: wrap;
+      padding: 10px 15px;
+  }
+
+  .navbar-links {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      background-color: #022C22;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      padding: 20px 0;
+      gap: 15px;
+      z-index: 99;
+  }
+
+  .navbar-links.show {
+      display: flex;
+  }
+
+  .contact-button {
+      display: none;
+  }
+
+  .navbar-toggle {
+      display: flex;
+  }
+}
