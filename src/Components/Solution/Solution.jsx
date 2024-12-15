@@ -1,5 +1,6 @@
 
 import "./Solution.css";
+import solar from '../../../public/assets/solar chrging.png'
 
 const Solutions = () => {
   return (
@@ -34,7 +35,7 @@ const Solutions = () => {
         {/* Solar Energy */}
         <div className="solution-card">
           <img
-            src="../../../public/assets/solar chrging.png"
+            src={solar}
             alt="Solar Energy"
             className="icon"
           />
