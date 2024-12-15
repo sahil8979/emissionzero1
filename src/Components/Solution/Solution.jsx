@@ -34,7 +34,7 @@ const Solutions = () => {
         {/* Solar Energy */}
         <div className="solution-card">
           <img
-            src="/public/assets/solar chrging.png"
+            src="../../../public/assets/solar chrging.png"
             alt="Solar Energy"
             className="icon"
           />
