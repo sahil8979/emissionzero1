@@ -56,7 +56,7 @@ const Navbar = () => {
                 <li><a href="#blog" onClick={closeMenu}>Blog</a></li>
             </ul>
 
-            {/* Contact Button */}
+    
             <button className="contact-button">Get in touch</button>
         </nav>
     );
