@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Overall styling */
+.green-movement {
+  align-items: center;
+  background-color: #FFF7ED;
+}
+
+.green-movement-container {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #022C22; /* Dark green background */
+  color: #ffffff;
+  padding: 4rem;
+  position: relative;
+  overflow: hidden;
+  height: 30vh;
+  border-top-right-radius: 270px;
+  border-bottom-right-radius: 260px;
+}
+
+.content-section {
+  max-width: 50%;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+}
+
+.cta-button {
+  background-color: #BEF264;
+  color: #1D1F1E;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #a0e600;
+}
+
+/* Image Section */
+.image-section {
+  position: relative;
+  width: 30%;
+  height: 360px; /* Adjust height as needed */
+}
+
+.circle-mask {
+  position: absolute;
+  right: -20%; /* Overlapping effect */
+  overflow: hidden;
+}
+
+.circle-mask img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 1024px) {
+  .green-movement-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    width: 90%;
+  }
+
+  .content-section {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .image-section {
+    width: 100%;
+    height: 250px;
+    margin-top: 2rem;
+  }
+
+  .circle-mask {
+    position: static;
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .green-movement-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .title {
+    margin-top: 5%;
+    font-size: 2rem;
+    
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .content-section {
+    max-width: 100%;
+    margin-bottom: 1.5rem; /* Reduced margin */
+  }
+
+  .image-section {
+    width: 100%;
+    height: 250px;
+    margin-top: 1rem; /* Reduced margin */
+  }
+
+  .circle-mask {
+    position: static;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .green-movement-container {
+    padding: 1rem;
+    height: auto;
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    margin-top: 5%;
+    font-size: 2rem;
+    
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .circle-mask {
+    width: 180px;
+    height: 180px;
+  }
+}

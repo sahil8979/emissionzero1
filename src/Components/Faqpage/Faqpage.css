@@ -1,0 +1,119 @@
+/* General Container */
+.faq-container {
+    font-family: Arial, sans-serif;
+    background-color: #fef9f3;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2%;
+  }
+  
+  .faq-title {
+    font-size: 2.5rem;
+    color: #1F1D1E;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+  }
+  
+  .faq-subtitle {
+    color: #646A69;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  /* FAQ Items */
+  .faq-items {
+    display: flex;
+    flex-direction: column; /* Ensures one question per line */
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .faq-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative; /* Added to avoid layout shift */
+  }
+  
+  /* Question */
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-weight: 600;
+    color: #1F1D1E;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-question:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .faq-icon {
+    font-size: 1.5rem;
+    color: #1F1D1E;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .faq-icon.open {
+    transform: rotate(180deg); /* Icon rotates when open */
+    opacity: 0.8; /* Fade effect */
+  }
+  
+  /* FAQ Dropdown Animation */
+  .faq-answer-wrapper {
+    overflow: hidden;
+    max-height: 0; /* Start closed */
+    opacity: 0;
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  }
+  
+  .faq-answer-wrapper.open {
+    max-height: 500px; /* Adjust based on content size */
+    opacity: 1;
+  }
+  
+  .faq-answer {
+    padding: 1rem;
+    background-color: #fefefe;
+    color: #1F1D1E;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  /* Footer Section */
+  .faq-footer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .faq-footer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .faq-footer a:hover {
+    text-decoration: underline;
+  }
+  .still{
+    font-weight: 500;
+    color:#1F1D1E
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .faq-items {
+      grid-template-columns: 1fr;
+    }
+  }
+  
