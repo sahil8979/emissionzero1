@@ -2,13 +2,18 @@
 
 /* Overall styling */
 .green-movement {
+  display: flex;
+  justify-content: center;
   align-items: center;
   background-color: #FFF7ED;
+  padding: 4rem 0; /* Added padding for vertical spacing */
 }
 
+/* Green movement container */
 .green-movement-container {
   display: flex;
-  width: 70%;
+  width: 100%;
+  max-width: 1200px; /* Ensure maximum width */
   justify-content: space-between;
   align-items: center;
   background-color: #022C22; /* Dark green background */
@@ -21,6 +26,7 @@
   border-bottom-right-radius: 260px;
 }
 
+/* Content Section */
 .content-section {
   max-width: 50%;
 }
@@ -81,7 +87,7 @@
     flex-direction: column;
     text-align: center;
     padding: 2rem;
-    width: 90%;
+    width: 90%; /* Reduced width on smaller screens */
   }
 
   .content-section {
@@ -115,10 +121,10 @@
     justify-content: center;
     align-items: center;
   }
+
   .title {
     margin-top: 5%;
     font-size: 2rem;
-    
   }
 
   .subtitle {
@@ -158,12 +164,11 @@
 
   .title {
     margin-top: 5%;
-    font-size: 2rem;
-    
+    font-size: 1.5rem;
   }
 
   .subtitle {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .cta-button {
