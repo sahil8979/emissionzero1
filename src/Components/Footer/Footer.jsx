@@ -1,9 +1,9 @@
 import React from "react";
-import "./Footer.css";
+import './Footer.css';
 import facebookIcon from "../../../public/assets/facebook-app-symbol 1.png";
 import instagramIcon from "../../../public/assets/mdi_instagram.png";
 import linkedinIcon from "../../../public/assets/mdi_linkedin.png";
-import logo from '../../../public/assets/logo.png'
+import logo from '../../../public/assets/em logo.png'
 
 const Footer = () => {
   return (

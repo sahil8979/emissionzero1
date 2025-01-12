@@ -4,3 +4,21 @@
     padding: 0;
     font-family: "Figtree", sans-serif;
 }
+/* App Container to handle the layout */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the footer is at the bottom */
+  }
+  
+  .content-wrapper {
+    flex: 1; /* Takes up available space pushing the footer down */
+    padding-bottom: 20px; /* Adds spacing between content and footer */
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+  }
+   
+  .content-wrapper.fade-in {
+    opacity: 1;
+  }
+  

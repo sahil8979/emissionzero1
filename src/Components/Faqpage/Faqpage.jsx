@@ -24,7 +24,7 @@ const FAQ = () => {
   }, []);
 
   return (
-    <div className="faq-container">
+    <div className="faq-container" id="faq">
       <h1 className="faq-title">FAQ</h1>
       <p className="faq-subtitle">Here you will find the answers to the frequently asked questions.</p>
       <div className="faq-items">

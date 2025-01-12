@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Navbar.css';
-import logo from '../../../public/assets/logo.png';
+import logo from '../../../public/assets/em logo.png';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -50,13 +51,52 @@ const Navbar = () => {
 
             {/* Navigation Links */}
             <ul className={`navbar-links ${isMenuOpen ? 'show' : ''}`}>
-                <li><a href="#about" onClick={closeMenu}>About us</a></li>
-                <li><a href="#team" onClick={closeMenu}>Team</a></li>
-                <li><a href="#solutions" onClick={closeMenu}>Solutions</a></li>
-                <li><a href="#blog" onClick={closeMenu}>Blog</a></li>
+                <li>
+                    <Link 
+                        to="about" 
+                        smooth={true} 
+                        duration={500} 
+                        offset={-50} 
+                        onClick={closeMenu}
+                    >
+                        About us
+                    </Link>
+                </li>
+                <li>
+                    <Link 
+                        to="team" 
+                        smooth={true} 
+                        duration={500} 
+                        offset={-50} 
+                        onClick={closeMenu}
+                    >
+                        Team
+                    </Link>
+                </li>
+                <li>
+                    <Link 
+                        to="solutions" 
+                        smooth={true} 
+                        duration={500} 
+                        offset={-50} 
+                        onClick={closeMenu}
+                    >
+                        Solutions
+                    </Link>
+                </li>
+                <li>
+                    <Link 
+                        to="faq" 
+                        smooth={true} 
+                        duration={500} 
+                        offset={-50} 
+                        onClick={closeMenu}
+                    >
+                        FAQ's
+                    </Link>
+                </li>
             </ul>
 
-    
             <button className="contact-button">Get in touch</button>
         </nav>
     );

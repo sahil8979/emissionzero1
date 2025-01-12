@@ -7,14 +7,15 @@ const Hero = () => {
     return (
         <div className="hero">
             <div className="hero-content">
-                <small className="hero-subtitle">Powering Tomorrow</small>
+                <small className="hero-subtitle">Cleaner Tomorrow</small>
                 <h1 className="hero-title">
-                    The Future of <br />Green Energy
+                    Cleaner Air <br />Greener Future
                 </h1>
                 <p className="hero-description">
-                    Our commitment to green energy is paving the way for a cleaner,<br /> 
-                    healthier planet. Join us on a journey towards a future where clean,<br /> 
-                    renewable energy sources transform the way we power our lives.
+                    Our commitment is to reduce rising pollution levels by,<br /> 
+                    harnessing the, power of micro-algae.join us on journey,<br />
+                    toward a cleaner, greener future where innovation and ,<br /> 
+                    sustainability work hand in hand for a better tomorrow.
                 </p>
                 <div className="hero-buttons">
                     <button className="hero-button primary">See our solutions</button>

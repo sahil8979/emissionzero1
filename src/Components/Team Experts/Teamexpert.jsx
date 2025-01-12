@@ -30,7 +30,7 @@ const TeamExperts = () => {
   ];
 
   return (
-    <section className="team-section">
+    <section className="team-section" id="team">
       <div className="team-header">
         <h2>Meet our experts</h2>
         <p>

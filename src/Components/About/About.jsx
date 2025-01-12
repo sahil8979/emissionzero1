@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import "./About.css";
 
@@ -34,25 +34,56 @@ const StatCounter = ({ value, duration }) => {
 
 const AboutUs = () => {
   const { ref, inView } = useInView({ triggerOnce: true });
+  
+  // State to manage whether the full description is shown
+  const [isExpanded, setIsExpanded] = useState(false);
+  
+  // Reference to the About Description text
+  const aboutDescriptionRef = useRef(null);
+
+  // Handle toggling of the "Read More" button
+  const toggleDescription = () => {
+    setIsExpanded((prev) => !prev);
+  };
+
+  // Close the description if clicked outside
+  const handleClickOutside = (event) => {
+    if (aboutDescriptionRef.current && !aboutDescriptionRef.current.contains(event.target)) {
+      setIsExpanded(false);  // Close the description if clicked outside
+    }
+  };
+
+  useEffect(() => {
+    // Add event listener to detect clicks outside
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
-    <div className="about-us-container">
+    <div className="about-us-container" id="about">
       {/* About Us Text */}
       <div className="about-text-container">
         <div className="about-title">
           <h2>About us</h2>
         </div>
         <div>
-          <p className="about-description">
+          <p 
+            ref={aboutDescriptionRef} 
+            className={`about-description ${isExpanded ? 'expanded' : ''}`}
+          >
             At Flow, we are committed to a sustainable future. As a pioneering
             force in the green energy sector, we have been at the forefront of
             the transition to clean, renewable power sources. Our mission is
             simple yet profound: to create a world where energy is not only
             abundant but also environmentally responsible. We believe that by
             harnessing the power of nature, we can power the world and protect
-            it simultaneously.
+            it simultaneously. {isExpanded && "Our goal is to integrate renewable energy sources into everyday life, reduce carbon footprints, and foster a cleaner, greener environment for future generations."}
           </p>
-          <button className="read-more-button">Read more</button>
+          <button className="read-more-button" onClick={toggleDescription}>
+            {isExpanded ? 'Read less' : 'Read more'}
+          </button>
         </div>
       </div>
 

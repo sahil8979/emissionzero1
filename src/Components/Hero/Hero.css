@@ -176,7 +176,7 @@
     }
 
     .hero-description {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .left-image img, .right-image img {
@@ -208,7 +208,7 @@
     }
 
     .hero-description {
-        font-size: 0.75rem;
+        font-size: 0.6rem;
     }
 
     .left-image img, .right-image img {
@@ -219,13 +219,13 @@
     .rightbottom-image {
         width: 100px;
         height: 160px;
-        bottom: 25%;
+        bottom: 22%;
     }
 
     .leftbottom-image {
         width: 180px;
         height: 120px;
-        bottom: 25%;
+        bottom: 22%;
     }
 }
 
@@ -245,7 +245,7 @@
     }
 
     .hero-description {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
 
     .hero-buttons {
@@ -263,15 +263,15 @@
     .rightbottom-image {
         width: 120px;
         height: 160px;
-        right: 4%;
-        bottom: 20%;
+        right: 3%;
+        bottom: 16%;
     }
 
     .leftbottom-image {
         width: 150px;
         height: 120px;
-        left: 4%;
-        bottom: 20%;
+        left: 3%;
+        bottom: 16%;
     }
     .hero-button{
         padding: 10px 16px;
