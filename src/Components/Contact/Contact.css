@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-div {
+    margin-top: 4.2rem;
+}
+
+.contact-divs {
+    margin-top: 2rem;
+}
+
+.contact-heading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000f38;
+    margin-bottom: 20px;
+}
+
+.contact {
+    margin: 20px auto;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#icon {
+    color: #008000;
+    margin-right: 5px; /* Adjust spacing between icon and text */
+}
+
+.contact-col {
+    flex-basis: 48%;
+    color: black;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: white;
+    position: relative;
+}
+
+/* New photo-container styling */
+.photo-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Align photo and text in the same row */
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+/* Ensure no gap between email and phone number */
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0; /* No space between email and phone */
+    margin-top: 0; /* No space on top either */
+    line-height: 1.4; /* Adjust line height if necessary */
+}
+
+.text {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+/* Form and map styling */
+.contact form input, 
+.contact form textarea {
+    display: block;
+    width: 100%;
+    background: #00800025;
+    padding: 15px;
+    font-size: 1rem;
+    border: 0;
+    outline: 0;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    resize: none;
+}
+
+.contact form button {
+    background-color: #008000;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 20px;
+    outline: 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-col span {
+    display: block;
+    margin: 20px 0;
+}
+
+/* Box Shadow for Swapnil and Aman */
+.contact-box {
+    box-shadow: 0 0 10px rgba(58, 228, 58, 0.5); /* Box-shadow added */
+}
+
+/* Media Query for small screens */
+@media (max-width: 700px) {
+    .contact {
+        display: block;
+    }
+    .contact-col {
+        padding: 20px;
+        margin-bottom: 20px; /* Add space between the two divs */
+    }
+    .photo-container {
+        width: 80px;
+        height: 80px;
+    }
+    .contact-info {
+        flex-direction: column; /* Stack photo and text vertically */
+    }
+    .contact-info-item {
+        flex-direction: column; /* Stack icon and text vertically */
+        align-items: flex-start;
+    }
+}

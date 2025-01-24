@@ -1,32 +1,28 @@
 import React from "react";
 import "./Teamexpert.css";
-import img2 from "../../../public/assets/john wiley.png";
-import img1 from "../../../public/assets/cameron wiliamson.png"; // Replace with your actual image path
-import img3 from "../../../public/assets/courtsey enry.png";
-import img4 from "../../../public/assets/daniel rusell.png";
+
+import yash from "../../../public/assets/yash.jpg";
+import prakhar from "../../../public/assets/prakhar.jpg";
+import yashvant from '../../../public/assets/yashvant.jpg'
 
 const TeamExperts = () => {
   const teamData = [
     {
-      img: img1,
-      name: "Jenny Wilson",
-      title: "Senior Sustainability Consultant",
+      img: yashvant,
+      name: "Yashvant Singh",
+      title: "Co-Founder",
     },
     {
-      img: img2,
-      name: "Cameron Williamson",
-      title: "Senior Sustainability Consultant",
+      img: yash,
+      name: "Yash Sisodia",
+      title: "Co-Founder",
     },
     {
-      img: img3,
-      name: "Courtney Henry",
-      title: "Energy Analyst",
+      img: prakhar,
+      name: "Prakhar Pandey",
+      title: "Tech Head",
     },
-    {
-      img: img4,
-      name: "Dianne Russell",
-      title: "Senior Renewable Energy Engineer",
-    },
+    
   ];
 
   return (

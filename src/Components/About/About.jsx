@@ -73,22 +73,17 @@ const AboutUs = () => {
             ref={aboutDescriptionRef} 
             className={`about-description ${isExpanded ? 'expanded' : ''}`}
           >
-            At Flow, we are committed to a sustainable future. As a pioneering
-            force in the green energy sector, we have been at the forefront of
-            the transition to clean, renewable power sources. Our mission is
-            simple yet profound: to create a world where energy is not only
-            abundant but also environmentally responsible. We believe that by
-            harnessing the power of nature, we can power the world and protect
-            it simultaneously. {isExpanded && "Our goal is to integrate renewable energy sources into everyday life, reduce carbon footprints, and foster a cleaner, greener environment for future generations."}
+            Welcome to Emission Zero! At Emission Zero, we're dedicated to paving the way for a cleaner, greener, and brighter tomorrow. Our mission is to combat environmental pollution through the utilization of cutting-edge technologies, with a special focus on algae photobioreactors. By harnessing the power of these modern innovations, we're committed to reducing pollution and fostering a sustainable future for generations to come. Join us in our journey towards a world where emissions are zero, and the environment thrives.
+            {isExpanded && "At Emission Zero, we don't just dream of a better world, we engineer it into existence.With each sustainable solution we deploy, Emission Zero lights the path to a future where nature and technology harmonize for planetary rejuvenation. Together, let's make a difference."}
           </p>
           <button className="read-more-button" onClick={toggleDescription}>
             {isExpanded ? 'Read less' : 'Read more'}
           </button>
         </div>
       </div>
-
-      {/* Image Grid */}
-      <div className="image-grid">
+ {/*
+      
+     <div className="image-grid">
         <img src={solarPanel} alt="Solar Panel" className="grid-image" />
         <img src={river} alt="River Energy" className="grid-image" />
         <img src={windFarm} alt="Wind Farm" className="grid-image" />
@@ -96,7 +91,7 @@ const AboutUs = () => {
         <img src={oceanWave} alt="Ocean Energy" className="grid-image" />
       </div>
 
-      {/* Stats Section */}
+     
       <div ref={ref} className="stats-container">
         {inView && (
           <>
@@ -127,6 +122,7 @@ const AboutUs = () => {
           </>
         )}
       </div>
+      */}
     </div>
   );
 };

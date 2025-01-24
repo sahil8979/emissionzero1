@@ -3,7 +3,8 @@ import './Footer.css';
 import facebookIcon from "../../../public/assets/facebook-app-symbol 1.png";
 import instagramIcon from "../../../public/assets/mdi_instagram.png";
 import linkedinIcon from "../../../public/assets/mdi_linkedin.png";
-import logo from '../../../public/assets/em logo.png'
+import logo from '../../../public/assets/em logo.png';
+
 
 const Footer = () => {
   return (
@@ -54,21 +55,36 @@ const Footer = () => {
         {/* Social Media Links */}
         <div className="footer-social">
           <div className="social-item-container">
-            <div className="social-item">
+            <a
+              href="https://www.facebook.com/profile.php?id=61555950875816"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-item"
+            >
               <img src={facebookIcon} alt="Facebook" />
-            </div>
+            </a>
             <span>Follow us on Facebook</span>
           </div>
           <div className="social-item-container">
-            <div className="social-item">
+            <a
+              href="https://www.instagram.com/emissionzero.india/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-item"
+            >
               <img src={instagramIcon} alt="Instagram" />
-            </div>
+            </a>
             <span>Follow us on Instagram</span>
           </div>
           <div className="social-item-container">
-            <div className="social-item">
+            <a
+              href="https://www.instagram.com/emissionzero.india/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-item"
+            >
               <img src={linkedinIcon} alt="LinkedIn" />
-            </div>
+            </a>
             <span>Follow us on LinkedIn</span>
           </div>
         </div>

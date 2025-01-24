@@ -5,8 +5,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #022C22;
-  color: white;
+  background-color:  #BEF264;
+  color:  #001f12;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -20,15 +20,15 @@
 }
 
 .logo-img {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   object-fit: contain;
 }
 
 .logo-text {
   font-size: 2rem;
   font-weight: 600;
-  color: #FFFF;
+  color:  #022C22;
   font-family: "Figtree", sans-serif;
 }
 
@@ -45,9 +45,10 @@
 
 .navbar-links a {
   text-decoration: none;
-  color: white;
+  color:  #022C22;
   font-size: 1rem;
   transition: color 0.3s;
+  font-weight: 600;
 }
 
 .navbar-links a:hover {
@@ -55,14 +56,15 @@
 }
 
 .contact-button {
-  color: #FFFF;
-  border: 2px solid #FFFF;
+  color: #022C22;
+  border: 2px solid #022C22;
   width: 125px;
   height: 45px;
-  background-color: #022C22;
+  background-color: #BEF264 ;
   border-radius: 200px;
   cursor: pointer;
   font-size: 1rem;
+  font-weight: 600;
   transition: background-color 0.3s;
 }
 

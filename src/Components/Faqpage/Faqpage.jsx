@@ -5,11 +5,12 @@ const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const faqData = [
-    { question: "What is green energy?", answer: "Green energy is power derived from natural resources such as sunlight, wind, and water. It is renewable, sustainable, and environmentally friendly." },
-    { question: "How does green energy benefit the environment?", answer: "Green energy reduces greenhouse gas emissions, improves air quality, conserves natural resources, and slows down climate change." },
-    { question: "What green energy solutions does your company offer?", answer: "We provide solar panel installations, wind turbine setups, energy audits, and consulting for greener energy consumption." },
-    { question: "What support services do you offer after installing green energy solutions?", answer: "We offer maintenance, troubleshooting, performance monitoring, and customer support for installed systems." },
-    { question: "How do solar panels work?", answer: "Solar panels absorb sunlight and convert it into electricity through photovoltaic cells, which can then power homes and businesses." },
+    { question: " What is Emission Zero's primary mission?  ", answer: "Emission Zero aims to combat environmental pollution by leveraging cutting-edge technologies like algae photobioreactors and electrostatic precipitators. Our mission is to create sustainable solutions that reduce greenhouse gases, particulate matter, and other harmful pollutants, paving the way for a cleaner and greener future. " },
+    { question: "How do algae photobioreactors work?", answer: "Our algae photobioreactors use algae to absorb CO₂ from the atmosphere and convert it into oxygen and biomass through photosynthesis. This process is highly efficient, with algae being 400 times more effective at sequestering CO₂ than trees, providing a scalable and sustainable solution to greenhouse gas emissions." },
+    { question: " How are photobioreactors efficient than trees in reducing CO₂?", answer: "While trees play a vital role in sequestering CO₂, they take years to grow and have limited efficiency. Photobioreactors, on the other hand, start working immediately upon setup and are 400 times more efficient than trees, making them a faster and more scalable solution for CO₂ reduction." },
+    { question: "Where can photobioreactors be installed?", answer: "Photobioreactors can be installed in diverse environments, including urban spaces, industrial sites, and even indoor settings. Their modular design allows flexibility, making them adaptable to various scales and locations. " },
+    { question: "How can I partner with or support Emission Zero?", answer: "You can partner with us by adopting our solutions, collaborating on research, or supporting our mission through sponsorships and investments. Contact us via our website to explore opportunities for collaboration." },
+    
   ];
 
   const handleToggle = (index) => {
@@ -52,7 +53,7 @@ const FAQ = () => {
       <div className="faq-footer">
         <p className='still'>Still have questions?</p>
         <p>
-          For assistance, please visit our <a href="/contact">Contact Us</a> page or call our support hotline at <strong>(677) 555-0110</strong>.
+          For assistance, please visit our <strong>Contact Us</strong> page or call our support hotline at <strong>(+91)9131903258</strong>.
         </p>
       </div>
     </div>

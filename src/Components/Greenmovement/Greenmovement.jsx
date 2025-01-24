@@ -9,7 +9,8 @@ const GreenMovement = () => {
       <div className="content-section">
         <h1 className="title">Join the Next Revolution</h1>
         <p className="subtitle">
-        Our commitment to harnessing nature’s power is paving the way for a cleaner, pollution-free world.
+        Emission Zero: Cultivating Change, Growing Greener - Empowering a Sustainable Tomorrow with Algae Innovation!
+
         </p>
         <button className="cta-button">Get in touch</button>
       </div>

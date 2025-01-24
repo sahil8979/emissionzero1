@@ -95,9 +95,20 @@ const Navbar = () => {
                         FAQ's
                     </Link>
                 </li>
+                
             </ul>
 
-            <button className="contact-button">Get in touch</button>
+            <button className="contact-button">
+    <Link 
+        to="contact" 
+        smooth={true} 
+        duration={500} 
+        offset={-50} 
+        onClick={closeMenu}
+    >
+        Get in touch
+    </Link>
+</button>
         </nav>
     );
 };
