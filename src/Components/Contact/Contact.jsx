@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact.css';
-import yashvant from '../../../public/assets/yashvant.jpg'
+import yashvant from '../../../public/assets/yashvant2.jpg'
 import yash from '../../../public/assets/yash.jpg'
 
 import { FaEnvelope, FaPhone } from 'react-icons/fa';

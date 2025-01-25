@@ -5,8 +5,17 @@ import instagramIcon from "../../../public/assets/mdi_instagram.png";
 import linkedinIcon from "../../../public/assets/mdi_linkedin.png";
 import logo from '../../../public/assets/em logo.png';
 
-
 const Footer = () => {
+  const socialLinks = {
+    facebook: "https://www.facebook.com/profile.php?id=61555950875816",
+    instagram: "https://www.instagram.com/emissionzero.india/",
+    linkedin: "https://www.linkedin.com/company/99389884/admin/feed/posts/",
+  };
+
+  const openLink = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -54,9 +63,12 @@ const Footer = () => {
 
         {/* Social Media Links */}
         <div className="footer-social">
-          <div className="social-item-container">
+          <div
+            className="social-item-container"
+            onClick={() => openLink(socialLinks.facebook)}
+          >
             <a
-              href="https://www.facebook.com/profile.php?id=61555950875816"
+              href={socialLinks.facebook}
               target="_blank"
               rel="noopener noreferrer"
               className="social-item"
@@ -65,9 +77,12 @@ const Footer = () => {
             </a>
             <span>Follow us on Facebook</span>
           </div>
-          <div className="social-item-container">
+          <div
+            className="social-item-container"
+            onClick={() => openLink(socialLinks.instagram)}
+          >
             <a
-              href="https://www.instagram.com/emissionzero.india/"
+              href={socialLinks.instagram}
               target="_blank"
               rel="noopener noreferrer"
               className="social-item"
@@ -76,9 +91,12 @@ const Footer = () => {
             </a>
             <span>Follow us on Instagram</span>
           </div>
-          <div className="social-item-container">
+          <div
+            className="social-item-container"
+            onClick={() => openLink(socialLinks.linkedin)}
+          >
             <a
-              href="https://www.instagram.com/emissionzero.india/"
+              href={socialLinks.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="social-item"
