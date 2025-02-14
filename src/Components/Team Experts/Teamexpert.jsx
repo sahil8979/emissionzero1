@@ -16,7 +16,7 @@ const TeamExperts = () => {
     {
       img: yash,
       name: "Yash Sisodia",
-      title: "CEO's Brother",
+      title: "Co-Founder",
     },
     {
       img: prakhar,
@@ -26,7 +26,7 @@ const TeamExperts = () => {
     {
        img: nandini,
        name:"Nandini Gussain",
-       title:"CEO"
+       title:"Reasearcher"
     },
     
   ];
