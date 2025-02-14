@@ -4,6 +4,7 @@ import "./Teamexpert.css";
 import yash from "../../../public/assets/yash.jpg";
 import prakhar from "../../../public/assets/prakhar.jpg";
 import yashvant from '../../../public/assets/yashvant.jpg'
+import nandini from '../../../public/assets/nandini.jpg'
 
 const TeamExperts = () => {
   const teamData = [
@@ -15,12 +16,17 @@ const TeamExperts = () => {
     {
       img: yash,
       name: "Yash Sisodia",
-      title: "Co-Founder",
+      title: "CEO's Brother",
     },
     {
       img: prakhar,
       name: "Prakhar Pandey",
       title: "Tech Head",
+    },
+    {
+       img: nandini,
+       name:"Nandini Gussain",
+       title:"CEO"
     },
     
   ];
@@ -28,7 +34,7 @@ const TeamExperts = () => {
   return (
     <section className="team-section" id="team">
       <div className="team-header">
-        <h2>Meet our experts</h2>
+        <h2>Meet our Team</h2>
         <p>
           Our team boasts top green energy experts, driving innovation in
           sustainability.

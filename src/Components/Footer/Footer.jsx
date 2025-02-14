@@ -22,7 +22,7 @@ const Footer = () => {
         {/* Brand Section */}
         <div className="footer-brand">
           <img className="logo2" src={logo} alt="Logo" />
-          <h2 className="footer-logo">Emission Zero</h2>
+          <h2 className="footer-logo">Emissionzero</h2>
         </div>
 
         {/* Navigation Links */}

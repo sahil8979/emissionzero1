@@ -39,7 +39,7 @@ const Navbar = () => {
             {/* Logo Section */}
             <div className="navbar-logo">
                 <img src={logo} alt="Logo" className="logo-img" />
-                <span className="logo-text">Emission Zero</span>
+                <span className="logo-text">Emissionzero</span>
             </div>
 
             {/* Toggle Button */}
